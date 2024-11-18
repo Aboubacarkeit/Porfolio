@@ -10,7 +10,7 @@ html{
 
 body{
     font-family: 'Inter', sans-serif ;
-    background-color: #FFFFFF;
+    background-color: #EDE7DD;
 }
 
 a{
@@ -28,7 +28,7 @@ h2{
 }
 
 .header{
-    background-color: #FFFFFF;
+    background-color: #EDE7DD;
     position:fixed;
     width:100%;
 }
@@ -69,7 +69,7 @@ h2{
 }
 
 .active{
-    color: #EC221F;
+    color: #739BCE;
 }
 .main{
     max-width: 1200px;
@@ -83,7 +83,7 @@ h2{
     justify-content: space-around;
     align-items: center;
 }
-
+/*
 .section:nth-child(1){
     background:rgb(182,190,198);
 }
@@ -101,7 +101,7 @@ h2{
 .section:nth-child(4){
     background:rgb(198,182,182);
 
-}
+}*/
 
 .home_text{
     margin-right: 30px;
@@ -114,7 +114,7 @@ h2{
 }
 
 .home_text h2{
-    color:#EC221F;
+    color:#739BCE;
 }
 
 .home_text h4{
@@ -124,7 +124,7 @@ h2{
 }
 
 .home_text a{
-    background-color: #EC221F;
+    background-color: #739BCE;
     padding: 15px;
     border-radius: 10px;
     color: #FFFFFF;
@@ -145,7 +145,7 @@ h2{
 }
 
 .about_text h2{
-    color:#EC221F;
+    color:#739BCE;
 }
 
 .contact_form form {
@@ -174,7 +174,7 @@ h2{
 } 
 
 .contact_inputs::placeholder{
-    color: #EC221F;
+    color: #739BCE;
 }
 
 .contact_form button {
@@ -185,7 +185,7 @@ h2{
     width: 40%;
     font-size: 14px;
     color: #fff;
-    background-color: #EC221F;
+    background-color: #739BCE;
     gap: 10px;
     border: none;
     cursor: pointer;
@@ -201,14 +201,55 @@ h2{
     height: 16px; 
     vertical-align: middle;
 }
+.business_card h2 {
+    color: #739BCE;
+}
 
+.logo_img {
+    filter: invert(39%) sepia(29%) saturate(2454%) hue-rotate(179deg) brightness(95%) contrast(89%);
+}
 
+.resume img {
+    filter: invert(39%) sepia(29%) saturate(2454%) hue-rotate(179deg) brightness(95%) contrast(89%);
+}
+
+a[href="#Resume"] img {
+    filter: invert(39%) sepia(29%) saturate(2454%) hue-rotate(179deg) brightness(95%) contrast(89%);
+}
 
 #textarea{
     height: 140px;
     border-radius: 5px;
 }
 
-#red_text{
-    color: #EC221F;
+#blue_text{
+    color: #739BCE;
+}
+
+.project_picture img {
+    width: 100%;
+    height: auto;
+}
+
+.project_item:nth-child(2) .project_picture {
+    width: 50%;
+}
+
+.project_item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adjust the gap as needed */
+    align-items: center;
+}
+
+.project_item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project_picture {
+    flex: 1;
+}
+
+.project_text {
+    flex: 1;
 }

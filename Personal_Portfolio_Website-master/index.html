@@ -9,6 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
+    <style>
+        #projects {
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* Adjust the gap as needed */
+        }
+
+        .project_item {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* Adjust the gap as needed */
+        }
+
+        .project_item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -41,51 +58,75 @@
     <main class="main">
         <section class="section" id="home">
             <div class="home_text">
-                <h1>John Doe</h1>
-                <h2>Im a software engineer</h2>
-                <h4><span id="red_text">Full stack developer</span> who builds complete web applications and handle both the Front-end and Back-end. I create <span id="red_text">visual appealing</span> and <span id="red_text">functional</span> user experiences.</h4>
+                <h1>Aboubacar Keita</h1>
+                <h2>Cybersecurity Specitaltist</h2>
+                <h4>Inspiring Cybersecurity professional decdicated in <span id="blue_text">protecting systems, networks, </span> and <span id="blue_text"> data from threats.</span></h4>
                 <a href="#contact">Contact Me</a>
             </div>
             <div class="home_img">
-                <img src="assets/Happy.png" alt="image of woman that looks happy">
+                <img src="assets/Aboubacar_Picture.jpg" alt="image of woman that looks happy">
             </div>
         </section>
         <section class="section" id="about">
             <div class="about_img">
-                <img src="assets/Focused.png" alt="Woman staring at the camera while code is projected on her face. Looking Focused.">
+                <img src="assets/Operutnity_Picture.jpg" alt="Woman staring at the camera while code is projected on her face. Looking Focused.">
             </div>
             <div class="about_text">
-                <h2>Who am I</h2>
-                <h4>Hello my name is <span id="red_text">John Doe</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                <h2>Who am I</h2><br>
+                <h4>I’m Aboubacar Keita, a Computer Science student at Hostos Community College, focused on cybersecurity. I’m passionate about learning how to protect systems and data from online threats. My goal is to develop skills in areas like ethical hacking, network security, and secure programming to build a career in keeping technology safe. I enjoy solving problems, learning new tools, and working on projects that help me understand how to make systems more secure.</h4> <br>
                 <p>Programming languages that I am proficient in:</p>
+                <br>
                 <ul>
-                    <li><h4>Python</h4></li>
+                    <li><h4>HTML and CSS</h4></li>
                     <li><h4>C++</h4></li>
                     <li><h4>JavaScript</h4></li>
                 </ul>
             </div>
         </section>
         <section class="section" id="projects">
-            <div class="project_text">
-                <h4>Feature Project</h4>
-                <h3>Project Title</h3>
-                <p>Give a discreption on what the project is about and what you wanted to achieve while making the project. The picture to the right should be a screenshot of the project.</p>
-                <p>type what technology you used:</p>
-                <ul>
-                    <li>PHP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <a href="#project1">
-                    <img src="assets/External link.png" alt="External link">
-                </a>
-                <a href="#githubRepository"> 
-                    <img src="assets/Github.png" alt="Link to github repostory">
-                </a>   
+            <div class="project_item">
+                <div class="project_text">
+                    <h4>Feature Project</h4>
+                    <h3>Password Strength Checker</h3>
+                    <p>This is a project I’m currently working on to help users create stronger and more secure passwords. The tool evaluates password strength based on length, complexity, and common patterns. My goal is to encourage better password practices and improve security awareness. It’s a work in progress, and I’m excited to keep learning and building new features as I develop it.</p>
+                    <p>type what technology you used:</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a href="#project1">
+                        <img src="assets/External link.png" alt="External link">
+                    </a>
+                    <a href="https://github.com/Aboubacarkeit"> 
+                        <img src="assets/Github.png" alt="Link to github repository">
+                    </a>   
+                </div>
+                <div class="project_picture">
+                    <img src="assets/Password_Picture.jpg" alt="Picture of code that represents a screenshot of your project.">
+                </div>
             </div>
-            <div class="project_picture">
-                <img src="assets/CodeImage.png" alt="Picture of code that represents a screenshot of your project.">
+
+            <div class="project_item">
+                <div class="project_picture">
+                    <img src="assets/App_picture.jpg" alt="Picture of code that represents a screenshot of your new project.">
+                </div>
+                <div class="project_text">
+                    <h4>Feature Project</h4>
+                    <h3>New Project Title</h3>
+                    <p>I am currently working on a project in my Object-Oriented Programming class to create a program that helps manage apps on a smartphone.</p>
+                    <p>Type what technology you used:</p>
+                    <ul>
+                        <li>C++</li>
+                    </ul>
+                    <a href="#newProjectLink">
+                        <img src="assets/External link.png" alt="External link">
+                    </a>
+                    <a href="https://github.com/Aboubacarkeit"> 
+                        <img src="assets/Github.png" alt="Link to github repository">
+                    </a>   
+                </div>
             </div>
         </section>
         <section class="section" id="contact">
